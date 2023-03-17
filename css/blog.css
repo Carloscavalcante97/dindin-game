@@ -1,268 +1,231 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-header {
-    width: 100%;
-    height: fit-content;
-    background: #2E948A;
-    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
-    display: inline-flex;
-}
-
-a {
-    text-decoration: none;
-    color: #FDFDFD;
-}
-
-header ul {
+.topo {
     display: flex;
-    list-style: none;
-}
-
-header ul li {
-    margin: auto 25px;
-    padding: 10px;
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-transform: uppercase;
-    color: #FDFDFD;
-}
-
-footer {
-    background-color: #419488;
-    height: fit-content;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer ul li {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-
-    color: #FFFFFF;
-}
-
-footer #footer-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 50px 0;
 }
-
-footer #buttons-footer {
-    display: flex;
-    flex-direction: column;
+.topo .conteudo-topo {
+    padding: 0px 275px 0px 100px;
 }
-
-footer #buttons-footer .button-quero-ser-prof,
-.button-mais-link {
-    width: 289px;
-    height: 51px;
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    background: #2E948A;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    cursor: pointer;
-    border-radius: 62px;
-}
-
-.menu-header {
-    width: 100%;
-    padding-top: 6vh;
-    padding-right: 5vw;
-    display: flex;
-    justify-content: right;
-}
-
-.logo-header {
-    padding-left: 5vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-}
-
-@media only screen and (max-width: 1200px) {
-
-    #first-row, #second-row, #third-row {
-        display: flex;
-        flex-direction: column !important;
-        align-items: center;
-    }
-
-}
-
-@media only screen and (max-width: 820px) {
-        /*
-
-        RESPONSIVIDADE MAIS CONTEUDO
-
-        */
-
-    #first-container {
-        flex-direction: column !important;
-    }
-
-    #mais-conteudo .titulo {
-        font-size: 22px !important;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-
-    footer #footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer nav ul {
-        display: flex;
-        flex-direction: row;
-    }
-
-    footer nav ul li {
-        display: flex;
-        padding-left: 15px;
-        margin-top: 4vw;
-        margin-bottom: 4vw;
-    }
-
-}
-
-@media only screen and (max-width: 710px) {
-    /*
-
-        RESPONSIVIDADE HEADER
-
-    */
-    
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header ul li {
-        font-size: 3vw;
-    }
-
-    .menu-header {
-        justify-content: center;
-    }
-
-    .logo-header {
-        padding-left: 0 !important;
-        padding-bottom: 0 !important;
-    } 
-
-    /*
-
-        RESPONSIVIDADE POST
-    
-    */
-
-    .descricao-post {
-        width: 340px !important;
-    }
-
-    .titulo-post {
-        font-size: 22px !important;
-    }
-
-    #img-post img {
-        width: 340px !important;
-    }
-}
-
-#mais-conteudo .titulo {
-    font-family: 'Ubuntu';
-    font-style: normal;
+.topo .conteudo-topo h1 {
+    color: #009688;
     font-weight: 700;
     font-size: 47px;
     line-height: 54px;
-    color: #009688;
-    padding-bottom: 4vh;
+    padding-bottom: 40px;
 }
-
-#mais-conteudo .descricao {
-    font-family: 'Ubuntu';
-    font-style: normal;
+.topo .conteudo-topo p {
+    color: #000;
     font-weight: 300;
     font-size: 20px;
     line-height: 23px;
-    color: #000000;
 }
 
-#first-container {
+.segunda {
+    background-color: #e5e5e5;
+    padding-bottom: 170px;
+}
+.conteudo-segunda {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 8vh;
-    padding-top: 8vh;
-    padding-left: 8vw;
-    padding-right: 8vw;
+    justify-content: space-between;
+    padding: 100px 100px 0px;
 }
-
-#blog-content {
-    background: #F7F7F7;
-    padding-left: 6vw;
-    padding-right: 6vw;
-    padding-bottom: 6vh;
+.conteudo-segunda article {
+    padding-right: 90px;
 }
-
-#banner-inicio img {
-    width: 360px;
-}
-
-.titulo-post {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    padding-top: 4vh;
-    line-height: 34px;
+.conteudo-segunda article h2 {
     color: #FF4081;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    padding: 19px 0px 19px 0px;
 }
-
-#img-post{
-    padding-top: 4vh;
-}
-
-.descricao-post {
-    font-family: 'Ubuntu';
-    font-style: normal;
+.conteudo-segunda article p {
+    color: #000;
     font-weight: 300;
-    padding-top: 4vh;
-    text-align: justify;
     font-size: 17px;
-    width: 500px;
     line-height: 20px;
-    color: #000000;
+    
+}
+.conteudo-segunda article img {
+    width: 518px;
+}
+.conteudo-segunda article a {
+    text-decoration: none;
+}
+/* RESPONSIVE DISPLAYS */
+
+/* MOBILE */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .topo {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+  }
+  .topo .conteudo-topo {
+    padding: 0;
+  }
+
+  .topo .conteudo-topo h1 {
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .conteudo-img {
+    text-align: center;
+  }
+
+  .topo div img {
+    width: 90%;
+  }
+
+  .topo .conteudo-topo p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .segunda {
+    padding: 0;
+  }
+
+  .content-second-global {
+    padding: 40px 20px;
+  }
+
+  .conteudo-segunda {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .conteudo-segunda article {
+    padding-right: 0;
+    padding: 20px 0;
+  }
+  .conteudo-segunda article img {
+    width: 100%;
+  }
+  .conteudo-segunda article h2 {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .conteudo-segunda article p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+  
+  /* TABLET */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .topo {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+  }
+  .topo .conteudo-topo {
+    padding: 0;
+  }
+  .topo .conteudo-topo h1 {
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .conteudo-img {
+    text-align: center;
+  }
+
+  .topo div img {
+    width: 90%;
+  }
+
+  .topo .conteudo-topo p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .segunda {
+    padding: 0;
+  }
+
+  .content-second-global {
+    padding: 40px 20px;
+  }
+
+  .conteudo-segunda {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .conteudo-segunda article {
+    padding-right: 0;
+    padding: 20px 0;
+  }
+  .conteudo-segunda article img {
+    width: 100%;
+  }
+  .conteudo-segunda article h2 {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .conteudo-segunda article p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+  
+/* LAPTOP */
+
+@media only screen and (min-width: 769px) and (max-width: 1140px) {
+  .segunda {
+    padding: 0;
+  }
+  
+  .topo {
+    padding: 40px 20px;
+  }
+  .topo .conteudo-topo {
+    padding: 0;
+  }
+
+  .conteudo-segunda {
+    padding: 0;
+  }
+  .conteudo-segunda article {
+    padding: 20px 10px;
+  }
+  .conteudo-segunda article img {
+    width: 100%;
+  }
+
 }
 
-#first-row, #second-row, #third-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+@media only screen and (min-width: 1141px) and (max-width: 1279px) {
 
-.button-quero-ser-prof {
-    margin-bottom: 2vh;
+  .segunda {
+    padding: 0;
+  }
+  
+  .topo {
+    padding: 40px 20px;
+    align-items: center;
+  }
+  .topo .conteudo-topo {
+    padding: 0 285px 0 0;
+  }
+
+  .conteudo-segunda {
+    padding: 0;
+  }
+  .conteudo-segunda article {
+    padding: 20px 10px;
+  }
+  .conteudo-segunda article img {
+    width: 100%;
+  }
+
 }
